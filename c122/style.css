@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body
+{
+	font-family: Poppins;
+	background-color:black;
+	color:white;
+	text-align: center;
+}
+span
+{
+	font-size: 18px;
+	color: red;
+}
+canvas
+{
+	background-color: purple;
+	border-radius: 20px;
+}
