@@ -17,13 +17,13 @@ recognition.onresult = function(event){
   if(content == "circle"){
     x = Math.floor(Math.random() * 900);
     y = Math.floor(Math.random() * 600);
-    document.getElemtnById("status").innerHTML = "The system is drawing the circle"
+    document.getElementById("status").innerHTML = "The system is drawing the circle"
     draw_circle = "set";
   }
   if(content == "rectangle"){
     x = Math.floor(Math.random() * 900);
     y = Math.floor(Math.random() * 600);
-    document.getElemtnById("status").innerHTML = "The system is drawing the rectangle"
+    document.getElementById("status").innerHTML = "The system is drawing the rectangle"
     draw_rekt = "set";
   }
 }
@@ -34,12 +34,12 @@ function draw(){
   if (draw_circle == "set"){
     radius = Math.floor(Math.random() *100)
     circle(x,y,radius);
-    document.getElemtnById("status").innerHTML = "The system has drawn the circle";
+    document.getElementById("status").innerHTML = "The system has drawn the circle";
     draw_circle = "";
   }
   if (draw_rekt == "set"){
     rect(x,y,70,50);
-    document.getElemtnById("status").innerHTML = "The system has drawn the rectangle";
+    document.getElementById("status").innerHTML = "The system has drawn the rectangle";
     draw_rekt = "";
   }
 }
