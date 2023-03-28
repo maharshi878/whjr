@@ -60,7 +60,7 @@ function draw() {
 		if(song1_status == false)
 		{
 			song1.play();
-			document.getElementById("song").innerHTML = "Playing - Harry Potter Theme Song"
+			document.getElementById("song").innerHTML = "Playing Song 1."
 		}
 	}
 
@@ -73,7 +73,7 @@ function draw() {
 		if(song2_status == false)
 		{
 			song2.play();
-			document.getElementById("song").innerHTML = "Playing - Peter Pan Song"
+			document.getElementById("song").innerHTML = "Playing Song 2."
 		}
 	}
 }
