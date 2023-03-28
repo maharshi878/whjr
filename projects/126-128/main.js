@@ -1,4 +1,4 @@
-song1 = "music1.mps";
+song1 = "music1.mp3";
 song2 = "music2.mp3";
 leftWristX = 0;
 leftWristY = 0;
@@ -7,8 +7,8 @@ rightWristY = 0;
 scoreLeftWrist = 0;
 scoreRightWrist = 0;
 function preload(){
-  song = loadSound("music.mp3");
-
+  song1 = loadSound("music1.mp3");
+  song2 = loadSound("music2.mp3");
 }
 function setup() {
   canvas = createCanvas(600, 500);
