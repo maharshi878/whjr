@@ -6,8 +6,8 @@ rightWristY = 0;
 scoreLeftWrist = 0;
 scoreRightWrist = 0;
 function preload(){
-  song1 = loadSound("music1.mp3");
-  song1 = loadSound("music2.mp3");
+  song = loadSound("music.mp3");
+
 }
 function setup() {
   canvas = createCanvas(600, 500);
@@ -30,6 +30,7 @@ function gotPoses(results) {
     scoreRightWrist = results[0].pose.keypoints[10].score;
     scoreLeftWrist = results[0].pose.keypoints[9].score;
     console.log("scoreRWrist" + scoreRightWrist + " scoreLWrist = " + scoreLeftWrist);
+
     leftWristX = results[0].pose.leftWrist.x
     leftWristY = results[0].pose.leftWrist.y
     console.log(" l x="+leftWristX+" l y="+leftWristY);
@@ -44,23 +45,21 @@ function draw() {
 
   fill('#FF0000');
   stroke('#FF0000');
-  circle(rightWristX,rightWristY,20);
 
-  if(rightWristY > 0) {
-   play1();
+  if(scoreRightWrist > 0.2) {
+    circle(rightWristX,rightWristY,20);
+    play2();
+    document.getElementById("song2").innerHTML = "Song 2 Playing Now";
   }
-  if(leftwristY > 0) {
-   play2();
+  if(scoreLeftWrist > 0.2) {
+   circle(leftWristX,leftWristY,20);
+    play1()
+   document.getElementById("song1").innerHTML = "Song 1 Playing Now";
   }
 }
-
 function play1() {
   song1.play();
-  song1.setVolume(1);
-  song1.rate(1);
 }
 function play2() {
   song2.play();
-  song2.setVolume(1);
-  song2.rate(1);
 }
