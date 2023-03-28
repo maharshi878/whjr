@@ -1,4 +1,5 @@
-song = "";
+song1 = "music1.mps";
+song2 = "music2.mp3";
 leftWristX = 0;
 leftWristY = 0;
 rightWristX = 0;
