@@ -1,0 +1,22 @@
+.heading {
+font-size: 23px;
+width: 100%;
+margin: 0px;
+}
+
+#status {
+font-size: 18px;
+}
+body {
+  background: rgb(63,94,251);
+  background: linear-gradient(148deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+  color:white;
+  font-family:poppins;
+}
+canvas {
+  box-shadow:10px 10px 10px gray;
+  border-radius: 10px;
+}
+#p5-loading{
+  text-align:center !important;
+}
