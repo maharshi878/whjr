@@ -11,7 +11,7 @@ function preload(){
 
 
 function setup(){
-  canvas = createCanvas(380, 380);
+  canvas = createCanvas(480, 380);
   canvas.center();
 }
 function start(){
@@ -36,14 +36,10 @@ function gotResult(error, results) {
 
 
 function draw() {
-  image(video, 0, 0, 380, 380);
-
-      if(statuss != "")
+  image(video, 0, 0, 480, 380);
+  if(statuss != "")
       { 
-        r = random(255);
-        g = random(255);
-        b = random(255);
-        objectDetector.detect(video, gotResult);
+        objectDetector.detect(video, gotResult)
         for (var i = 0; i < objects.length; i++) {
           document.getElementById("status").innerHTML = "Status : Object Detected";
           document.getElementById("number_of_objects").innerHTML = "Number of objects detected : "+objects.length;
