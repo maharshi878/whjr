@@ -1,7 +1,7 @@
 
 objects = [];
-status = "";
-
+statuss = "";
+video = "";
 function preload(){
   video = createVideo('video.mp4');
 }
@@ -21,7 +21,7 @@ function start()
 
 function modelLoaded() {
   console.log("Model Loaded!")
-  status = true;
+  statuss = true;
   video.loop();
   video.speed(1);
   video.volume(0);
@@ -38,7 +38,7 @@ function gotResult(error, results) {
 
 function draw() {
   image(video, 0, 0, 480, 380);
-      if(status != "")
+      if(statuss != "")
       {
         objectDetector.detect(video, gotResult);
         for (i = 0; i < objects.length; i++) {
