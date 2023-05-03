@@ -1,5 +1,5 @@
 objectDetector = "";
-objects = [];
+array = [];
 statuss = "";
 video = "";
 function preload(){
@@ -32,7 +32,7 @@ function gotResult(error, results) {
     console.log(error);
   }
   console.log(results);
-  objects = results;
+  array = results;
 }
 
 
@@ -41,16 +41,16 @@ function draw() {
       if(statuss != "")
       {
         objectDetector.detect(video, gotResult);
-        for (i = 0; i < objects.length; i++) {
+        for (i = 0; i < array.length; i++) {
           document.getElementById("status").innerHTML = "Status : Objects Detected";
-          document.getElementById("number_of_objects").innerHTML = "Number of objects detected are : "+ objects.length;
+          document.getElementById("number_of_objects").innerHTML = "Number of objects detected are : "+ array.length;
  
           fill("#FF0000");
-          percent = floor(objects[i].confidence * 100);
-          text(objects[i].label + " " + percent + "%", objects[i].x + 15, objects[i].y + 15);
+          percent = floor(array[i].confidence * 100);
+          text(array[i].label + " " + percent + "%", array[i].x + 15, array[i].y + 15);
           noFill();
           stroke("#FF0000");
-          rect(objects[i].x, objects[i].y, objects[i].width, objects[i].height);
+          rect(array[i].x, array[i].y, array[i].width, array[i].height);
         }
       }
 }
