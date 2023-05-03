@@ -1,4 +1,4 @@
-
+objectDetector = "";
 objects = [];
 statuss = "";
 video = "";
