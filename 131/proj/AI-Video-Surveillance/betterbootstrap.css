@@ -1,0 +1,74 @@
+@import url("https://maharshi878.github.io/lib/fonts/montserrat/bold/font.css");
+@import url("https://maharshi878.github.io/lib/fonts/poppins/font.css");
+
+.button-rounded{
+    border-radius:10px;
+    background-color: #ffffff00;
+    color: white;
+}
+.body-black-poppins{
+    background-color: black;
+    color:white;
+    font-family:poppins;
+}
+.body-white-poppins{
+    background-color: white;
+    color:black;
+    font-family:poppins;
+}
+.body-black-montserrat{
+    background-color: black;
+    color:white;
+    font-family:montserrat;
+}
+.body-white-montserrat{
+    background-color: white;
+    color:black;
+    font-family:montserrat;
+}
+.header-white-poppins{
+    font-family:poppins;
+    color: white;
+    font-size:40px;
+}
+.header-black-poppins{
+    font-family:poppins;
+    color: black;
+    font-size:40px;
+}
+.header-white-montserrat{
+    font-family:montserrat;
+    color: white;
+    font-size:40px;
+}
+.header-black-montserrat{
+    font-family:montserrat;
+    color: black;
+    font-size:40px;
+}
+.subheader-white-poppins{
+    font-family:poppins;
+    color: white;
+    font-size:20px;
+}
+.subheader-black-poppins{
+    font-family:poppins;
+    color: black;
+    font-size:20px;
+}
+.subheader-white-montserrat{
+    font-family:montserrat;
+    color: white;
+    font-size:20px;
+}
+.subheader-black-montserrat{
+    font-family:montserrat;
+    color: black;
+    font-size:20px;
+}
+.body-white-poppins-gradient{
+    background: rgb(63,94,251);
+    background: linear-gradient(148deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    color:white;
+    font-family:poppins;
+}
