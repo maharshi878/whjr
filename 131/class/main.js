@@ -1,7 +1,7 @@
-objectDetector = "";
-array = [];
-statuss = "";
-video = "";
+var objectDetector = "";
+var array = [];
+var statuss = "";
+var video = "";
 function preload(){
   video = createVideo('video.mp4');
 }
